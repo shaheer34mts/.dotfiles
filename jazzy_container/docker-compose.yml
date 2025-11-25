@@ -1,0 +1,62 @@
+services:
+  holistic_s_graphs:
+    image: holistic_s_graphs
+    build:
+      context: .
+      dockerfile: Dockerfile
+      ssh:
+        - default
+    container_name: holistic_s_graphs
+    environment:
+      DISPLAY: $DISPLAY
+      XAUTHORITY: $XAUTHORITY
+      SSH_AUTH_SOCK: $SSH_AUTH_SOCK
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: all
+      TERM: $TERM
+      SHELL: $SHELL
+      MAKEFLAGS: "-j2"
+      COLCON_PARALLEL_WORKERS: "2"
+      RMW_IMPLEMENTATION: rmw_cyclonedds_cpp
+      ROS_DOMAIN_ID: 0
+    runtime: nvidia
+    privileged: true
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 6G # Limit to 6GB RAM
+          cpus: '6' # Limit to 6 CPU cores
+        reservations:
+          memory: 1G # Reserve at least 1GB
+          cpus: '0.5' # Reserve at least 0.5 CPU cores
+    volumes:
+      # display related 
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ~/.Xauthority:/root/.Xauthority:rw
+      # ssh related
+      - $SSH_AUTH_SOCK:$SSH_AUTH_SOCK
+      # git
+      - ~/.gitconfig:/root/.gitconfig_local
+      # working dirs
+      - ./workspace:/root/workspace/:rw
+      # dev
+      - ./tools:/root/tools:rw
+      # Livox workspace
+      - ./ws_livox:/root/ws_livox:rw
+      # External storage for datasets
+      - /mnt/x9pro/datasets:/datasets
+      #  Copy Mprocs files
+      - ./docker_real_mprocs.yaml:/root/workspace/docker_real_mprocs.yaml
+      # persistent bash history and config
+      - ~/.bash_history:/root/.bash_history
+      - container_home_cache:/root/.cache # Optional: persist cache
+      # Complementary files
+      - ./complementary_bashrc:/root/.complementary_bashrc
+    network_mode: "host"
+    command: tail -f /dev/null
+volumes:
+  bash_history:
+    driver: local
+  container_home_cache:
+    driver: local
