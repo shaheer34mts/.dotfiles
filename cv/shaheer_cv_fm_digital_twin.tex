@@ -109,12 +109,14 @@
 \renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
-\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1mm, rightmargin=2ex]}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
 
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
 \newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
 
 % Commands for icon sizing and positioning
 \newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
@@ -128,7 +130,7 @@
 % ---------------------------------------------------------------- Header
 \begin{center}
     {\Huge\textbf{Muhammad SHAHEER}}\\[1mm]
-    {\large Research Scientist \textbar{} Digital Twins \textbullet{} Knowledge Graphs \textbullet{} Computer Vision \textbullet{} Robotics}
+    {\large Research Scientist \textbar{} Digital Twins \textbullet{} Knowledge Graphs \textbullet{} Computer Vision \textbullet{} Automation}
 \end{center}
 \vspace{-2mm}
 
@@ -152,14 +154,15 @@
 \section{\textbf{Professional Summary}}
 \vspace{1mm}
 \small{
-Research scientist (Ph.D. Computer Science -- Robotics; M.Sc. Robot Systems) with 5 years of experience designing and developing
-\textbf{real-time digital twin applications} of the built environment. Co-developer of \textbf{S-Graphs}, an open-source framework that turns
+Research scientist (Ph.D. Computer Science -- Robotics; M.Sc. Robot Systems) with 5 years of research experience designing and developing
+\textbf{real-time digital twin applications} of the built environment, preceded by \textbf{2 years in industry as an Automation Engineer}
+(\textbf{PLC and HMI programming} for \textbf{industrial control systems}). Co-developer of \textbf{S-Graphs}, an open-source framework that turns
 live LiDAR, camera and IMU data into a \textbf{hierarchical semantic knowledge graph} of buildings, and of methods integrating
 \textbf{BIM/IFC models and architectural plans} with sensor data to keep the virtual model aligned with the as-built reality.
 Experienced in combining \textbf{first-principle, probabilistic/statistical, data-driven (GNN) and computer vision models}, in
 \textbf{uncertainty quantification for risk-aware decision support}, and in shipping reproducible software (C++, Python, Git, Docker).
 10 peer-reviewed publications (8 IEEE RA-L, 2 IROS), 2nd place in the Hilti x Trimble 2026 Localization Challenge, and a track record
-of international conference presentations and cross-functional collaboration.
+of analytical problem solving, conference presentations and cross-functional collaboration.
 }
 \vspace{-2mm}
 
@@ -183,10 +186,18 @@ of international conference presentations and cross-functional collaboration.
 \resumeItemListStart
   \item Co-developed \textbf{S-Graphs, S-Graphs+ and S-Graphs 2.0}, an open-source, \textbf{real-time} framework that builds a multi-layer \textbf{hierarchical knowledge graph} (sensor, geometric, room and floor layers) from streaming LiDAR data, with hierarchical optimization and loop closure for large, multi-floor buildings (IEEE RA-L 2022, 2023, 2025).
   \item Developed \textbf{graph-matching methods} that align robot-built situational graphs with \textbf{architectural graphs extracted from BIM and floor plans}, enabling global localization and tightly coupled SLAM even when plans are imprecise (IROS 2023, Robotics 2023, IEEE RA-L 2025).
-  \item Contributed to \textbf{Graph Neural Network} models that infer high-level semantic concepts (rooms, walls) with \textbf{uncertainty estimates} from low-level geometry, combining data-driven and first-principle geometric models (IROS 2024, IEEE RA-L 2026).
-  \item Contributed to \textbf{BIM-informed Visual SLAM} for construction environments and \textbf{situationally-aware path planning} that exploits the semantic graph for safer, context-aware decisions (IEEE RA-L 2026).
+  \item Contributed to \textbf{Graph Neural Network} models inferring high-level concepts with \textbf{uncertainty estimates}, \textbf{BIM-informed Visual SLAM} for construction sites, and \textbf{situationally-aware path planning} on the semantic graph (IROS 2024, IEEE RA-L 2026).
   \item Engineered research software in \textbf{C++ and Python} on \textbf{ROS/ROS 2}, with \textbf{Git} version control and \textbf{Docker} containerization for reproducible deployment; validated in simulation (Gazebo, Unity) and on real-world industrial/construction datasets.
-  \item Presented results at IEEE/RSJ IROS and IEEE ICRA workshops (3 awards) and collaborated with international partners (University of Zaragoza, University of Amsterdam / ETH Zurich).
+  \item Presented at IROS and ICRA workshops (3 awards); collaborated with University of Zaragoza and University of Amsterdam / ETH Zurich.
+\resumeItemListEnd
+\vspace{1mm}
+% TODO: confirm exact dates and PLC/HMI platforms (e.g., Siemens TIA Portal/WinCC, Allen-Bradley/FactoryTalk) and add them
+\resumeSubheading
+    {Automation Engineer}{Pakistan}
+    {Haier Pakistan -- Industrial Automation, Manufacturing}{2017 -- 2019}
+\resumeItemListStart
+  \item Programmed \textbf{PLCs} for automated production equipment in an industrial manufacturing environment, implementing control logic, interlocks and operating modes (auto/manual) to ensure safe and reliable operation of \textbf{industrial control systems}.
+  \item Designed and developed \textbf{HMI} screens for machine operators, applying \textbf{user-centric UX/UI principles} to real-time process monitoring, alarms and operator control.
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 \vspace{-5mm}
@@ -196,13 +207,15 @@ of international conference presentations and cross-functional collaboration.
 \vspace{-0.2mm}
 \resumeHeadingSkillStart
   \resumeSubItem{Digital Twin \& Semantic Modeling:}
-    {Digital twins of buildings and industrial sites, 3D scene graphs, knowledge graphs, ontologies, asset hierarchies, BIM / IFC, semantic interoperability, heterogeneous data integration}
+    {Digital twins, 3D scene graphs, knowledge graphs, ontologies, asset hierarchies, BIM/IFC, interoperability}
   \resumeSubItem{Modeling Approaches:}
-    {First-principle geometric/kinematic models, probabilistic \& statistical models (factor graphs, Kalman and particle filters, uncertainty quantification), data models (Graph Neural Networks, CNNs), computer vision}
+    {First-principle, probabilistic \& statistical (factor graphs, Kalman/particle filters), GNNs, CNNs, computer vision}
   \resumeSubItem{Real-time Data \& Monitoring:}
-    {Real-time sensor fusion of streaming LiDAR (Velodyne, Ouster), IMU and RGB-D (Intel RealSense) data, SLAM, localization, deviation detection, pose graph optimization}
+    {Real-time fusion of LiDAR (Velodyne, Ouster), IMU and RGB-D (RealSense) data, SLAM, deviation detection}
   \resumeSubItem{Programming \& Frameworks:}
-    {Python, C++, ROS / ROS 2, OpenCV, PCL (Point Cloud Library), Eigen, g2o; simulation and 3D visualization with Gazebo, Unity, RViz}
+    {Python, C++, ROS/ROS 2, OpenCV, PCL, Eigen, g2o; simulation \& visualization: Gazebo, Unity, RViz}
+  \resumeSubItem{Industrial Automation:}
+    {PLC programming, HMI development, industrial control systems, operating modes, interlocks, alarms}
   \resumeSubItem{Software Engineering \& DevOps:}
     {Git version control, Docker, Linux, reproducible deployment, open-source development}
   % Uncomment / extend ONLY with items you can demonstrate in an interview:
@@ -210,10 +223,8 @@ of international conference presentations and cross-functional collaboration.
   %   {CI/CD (GitHub Actions / GitLab CI), REST APIs, SQL databases, React / JavaScript, Low-code (e.g., Power Apps)}
   % \resumeSubItem{Visualization \& Immersive:}
   %   {Dashboards (e.g., Grafana, Plotly Dash), AR/MR (e.g., Unity XR, HoloLens)}
-  % \resumeSubItem{Industrial Systems \& Security:}
-  %   {OPC UA, MQTT, industrial control systems, IEC 62443, ISO 27001}
-  \resumeSubItem{Professional:}
-    {Analytical problem solving, cross-functional collaboration, scientific writing, conference presentations, student supervision}
+  % \resumeSubItem{Industrial Protocols \& Security:}
+  %   {OPC UA, MQTT, Modbus, Profinet, IEC 62443, ISO 27001}
 \resumeHeadingSkillEnd
 
 % ---------------------------------------------------------------- Education
@@ -268,7 +279,7 @@ of international conference presentations and cross-functional collaboration.
 % ---------------------------------------------------------------- Publications
 \section{\textbf{Publications} \hfill \textcolor{darkblue}{\scriptsize J=Journal, C=Conference, S=In Submission}}
 \vspace{0.2mm}
-\small{
+\footnotesize{
 \begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, itemsep=0mm]
 \item[\textbf{[J.1]}] A. Bikandi, M. Cortizas, M. Shaheer et al. (2026). \href{https://arxiv.org/abs/2509.13972}{\textbf{BIM Informed Visual SLAM for Construction Environments}}. \textit{IEEE Robotics \& Automation Letters (RA-L)}, Early Access.
 
@@ -297,17 +308,14 @@ of international conference presentations and cross-functional collaboration.
 
 % ---------------------------------------------------------------- References
 \section{\textbf{References}}
-\vspace{0.8mm}
-\small{
-\begin{multicols}{2}
-\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]
-\item \textbf{Prof. Dr. Holger Voos} (Ph.D. Advisor)\\ University of Luxembourg\\ holger.voos@uni.lu \textbar{} +49 1516 2917429
-\item \textbf{Dr. Jose Luis Sanchez-Lopez} (Mentor)\\ University of Luxembourg\\ joseluis.sanchezlopez@uni.lu \textbar{} +352 671 104 298
-\columnbreak
-\item \textbf{Dr. Javier Civera} (Mentor, Collaborator)\\ University of Zaragoza\\ jcivera@unizar.es \textbar{} +34 876555554
-\item \textbf{Dr. Martin R. Oswald} (Collaborator)\\ University of Amsterdam \& ETH Zurich\\ m.r.oswald@uva.nl \textbar{} +49 176 96374630
-\end{itemize}
-\end{multicols}
+\vspace{1mm}
+\footnotesize{
+\begin{tabularx}{\textwidth}{@{}L@{\hspace{5mm}}L@{}}
+\textbf{Prof. Dr. Holger Voos}, Ph.D. Advisor, Univ. of Luxembourg & \textbf{Dr. Javier Civera}, Mentor, University of Zaragoza \\
+holger.voos@uni.lu \textbar{} +49 1516 2917429 & jcivera@unizar.es \textbar{} +34 876555554 \\[1mm]
+\textbf{Dr. Jose Luis Sanchez-Lopez}, Mentor, Univ. of Luxembourg & \textbf{Dr. Martin R. Oswald}, Collaborator, UvA \& ETH Zurich \\
+joseluis.sanchezlopez@uni.lu \textbar{} +352 671 104 298 & m.r.oswald@uva.nl \textbar{} +49 176 96374630 \\
+\end{tabularx}
 }
 
 \end{document}
