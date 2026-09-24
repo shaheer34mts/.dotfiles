@@ -1,0 +1,313 @@
+%
+% Academic CV LaTeX Template
+% Author: Dubasi Pavan Kumar
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+%
+% Tailored for: FM -- Senior Research Scientist in Digital Twin Applications (Job 1841, Luxembourg)
+%
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Make the PDF text layer machine-readable for ATS parsers
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=0.8cm}
+\setlength{\footskip}{5pt}
+
+% Hyperlink setup
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+    pdftitle={Muhammad Shaheer - CV - Senior Research Scientist in Digital Twin Applications},
+    pdfauthor={Muhammad Shaheer},
+    pdfkeywords={Digital Twin, Knowledge Graphs, Ontologies, 3D Scene Graphs, BIM, IFC, Computer Vision, Probabilistic Models, Real-time Data, Risk Evaluation, Python, C++, Docker, Git},
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{1mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+
+% Font options
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+
+\begin{document}
+\headerfontiii
+
+% ---------------------------------------------------------------- Header
+\begin{center}
+    {\Huge\textbf{Muhammad SHAHEER}}\\[1mm]
+    {\large Research Scientist \textbar{} Digital Twins \textbullet{} Knowledge Graphs \textbullet{} Computer Vision \textbullet{} Robotics}
+\end{center}
+\vspace{-2mm}
+
+\begin{center}
+    \small{
+    \faMobile \ +352 621 711 452 \textbar{} \faEnvelope \ \href{mailto:muhammad_shaheer_ahmed@outlook.com}{muhammad\_shaheer\_ahmed@outlook.com} \textbar{} Mondorf-les-Bains, Luxembourg
+    }
+\end{center}
+\vspace{-4mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/muhammad-shaheer-279361121/}{linkedin.com/in/muhammad-shaheer-279361121} \textbar{}
+    \socialicon{\faGithub} \href{https://github.com/shaheer34mts}{github.com/shaheer34mts} \textbar{}
+    \faGraduationCap \ \href{https://scholar.google.com/citations?user=vjHnjjUAAAAJ&hl=en&oi=ao}{Google Scholar}
+    }
+\end{center}
+\vspace{-5mm}
+
+% ---------------------------------------------------------------- Summary
+\section{\textbf{Professional Summary}}
+\vspace{1mm}
+\small{
+Research scientist (Ph.D. Computer Science -- Robotics; M.Sc. Robot Systems) with 5 years of experience designing and developing
+\textbf{real-time digital twin applications} of the built environment. Co-developer of \textbf{S-Graphs}, an open-source framework that turns
+live LiDAR, camera and IMU data into a \textbf{hierarchical semantic knowledge graph} of buildings, and of methods integrating
+\textbf{BIM/IFC models and architectural plans} with sensor data to keep the virtual model aligned with the as-built reality.
+Experienced in combining \textbf{first-principle, probabilistic/statistical, data-driven (GNN) and computer vision models}, in
+\textbf{uncertainty quantification for risk-aware decision support}, and in shipping reproducible software (C++, Python, Git, Docker).
+10 peer-reviewed publications (8 IEEE RA-L, 2 IROS), 2nd place in the Hilti x Trimble 2026 Localization Challenge, and a track record
+of international conference presentations and cross-functional collaboration.
+}
+\vspace{-2mm}
+
+% ---------------------------------------------------------------- Experience
+\section{\textbf{Professional Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+    {Post-Doctoral Researcher -- Digital Twins \& Spatial AI}{Kirchberg, Luxembourg}
+    {University of Luxembourg, SnT -- Automation \& Robotics Research Group}{Oct 2025 -- Present}
+\resumeItemListStart
+  \item Lead research on \textbf{digital-twin-ready 3D scene graphs} that link real-time robot sensor data with \textbf{BIM/IFC} building information models, keeping the virtual representation synchronized with the as-built state of construction sites and indoor facilities.
+  \item Design \textbf{semantic frameworks} (asset hierarchies building $\rightarrow$ floor $\rightarrow$ room $\rightarrow$ wall/structural element, graph-based \textbf{ontologies} and \textbf{knowledge graphs}) enabling \textbf{interoperability and advanced inference across heterogeneous data sources} (LiDAR, RGB-D, IMU, BIM, floor plans).
+  \item Integrate \textbf{probabilistic and statistical models} (factor graphs, uncertainty-aware landmarks) with \textbf{data-driven models} (Graph Neural Networks) and \textbf{computer vision}, quantifying confidence to detect deviations between planned and as-built models and support \textbf{risk evaluation and decision making}.
+  \item Benchmarked the pipeline against industrial ground truth in the \textbf{Hilti x Trimble SLAM Challenge 2026}, placing \textbf{2nd in Localization} and 5th in SLAM.
+\resumeItemListEnd
+\vspace{1mm}
+\resumeSubheading
+    {Doctoral Researcher -- Robotics \& Digital Representations of Buildings}{Kirchberg, Luxembourg}
+    {University of Luxembourg, SnT -- Automation \& Robotics Research Group}{Nov 2021 -- Sep 2025}
+\resumeItemListStart
+  \item Co-developed \textbf{S-Graphs, S-Graphs+ and S-Graphs 2.0}, an open-source, \textbf{real-time} framework that builds a multi-layer \textbf{hierarchical knowledge graph} (sensor, geometric, room and floor layers) from streaming LiDAR data, with hierarchical optimization and loop closure for large, multi-floor buildings (IEEE RA-L 2022, 2023, 2025).
+  \item Developed \textbf{graph-matching methods} that align robot-built situational graphs with \textbf{architectural graphs extracted from BIM and floor plans}, enabling global localization and tightly coupled SLAM even when plans are imprecise (IROS 2023, Robotics 2023, IEEE RA-L 2025).
+  \item Contributed to \textbf{Graph Neural Network} models that infer high-level semantic concepts (rooms, walls) with \textbf{uncertainty estimates} from low-level geometry, combining data-driven and first-principle geometric models (IROS 2024, IEEE RA-L 2026).
+  \item Contributed to \textbf{BIM-informed Visual SLAM} for construction environments and \textbf{situationally-aware path planning} that exploits the semantic graph for safer, context-aware decisions (IEEE RA-L 2026).
+  \item Engineered research software in \textbf{C++ and Python} on \textbf{ROS/ROS 2}, with \textbf{Git} version control and \textbf{Docker} containerization for reproducible deployment; validated in simulation (Gazebo, Unity) and on real-world industrial/construction datasets.
+  \item Presented results at IEEE/RSJ IROS and IEEE ICRA workshops (3 awards) and collaborated with international partners (University of Zaragoza, University of Amsterdam / ETH Zurich).
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+% ---------------------------------------------------------------- Skills
+\section{\textbf{Technical Skills}}
+\vspace{-0.2mm}
+\resumeHeadingSkillStart
+  \resumeSubItem{Digital Twin \& Semantic Modeling:}
+    {Digital twins of buildings and industrial sites, 3D scene graphs, knowledge graphs, ontologies, asset hierarchies, BIM / IFC, semantic interoperability, heterogeneous data integration}
+  \resumeSubItem{Modeling Approaches:}
+    {First-principle geometric/kinematic models, probabilistic \& statistical models (factor graphs, Kalman and particle filters, uncertainty quantification), data models (Graph Neural Networks, CNNs), computer vision}
+  \resumeSubItem{Real-time Data \& Monitoring:}
+    {Real-time sensor fusion of streaming LiDAR (Velodyne, Ouster), IMU and RGB-D (Intel RealSense) data, SLAM, localization, deviation detection, pose graph optimization}
+  \resumeSubItem{Programming \& Frameworks:}
+    {Python, C++, ROS / ROS 2, OpenCV, PCL (Point Cloud Library), Eigen, g2o; simulation and 3D visualization with Gazebo, Unity, RViz}
+  \resumeSubItem{Software Engineering \& DevOps:}
+    {Git version control, Docker, Linux, reproducible deployment, open-source development}
+  % Uncomment / extend ONLY with items you can demonstrate in an interview:
+  % \resumeSubItem{Full-stack \& Low-code:}
+  %   {CI/CD (GitHub Actions / GitLab CI), REST APIs, SQL databases, React / JavaScript, Low-code (e.g., Power Apps)}
+  % \resumeSubItem{Visualization \& Immersive:}
+  %   {Dashboards (e.g., Grafana, Plotly Dash), AR/MR (e.g., Unity XR, HoloLens)}
+  % \resumeSubItem{Industrial Systems \& Security:}
+  %   {OPC UA, MQTT, industrial control systems, IEC 62443, ISO 27001}
+  \resumeSubItem{Professional:}
+    {Analytical problem solving, cross-functional collaboration, scientific writing, conference presentations, student supervision}
+\resumeHeadingSkillEnd
+
+% ---------------------------------------------------------------- Education
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Ph.D. Computer Science (Robotics)}{Kirchberg, Luxembourg}
+{University of Luxembourg -- Thesis on semantic 3D scene graphs informed by architectural/BIM models}{}
+\resumeSubheading
+{M.Sc. Robot Systems}{Odense, Denmark}
+{University of Southern Denmark -- Danish Government Scholarship}{}
+\resumeSubheading
+{B.E. Mechatronics Engineering}{Islamabad, Pakistan}
+{National University of Sciences and Technology (NUST)}{}
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+% ---------------------------------------------------------------- Awards
+\section{\textbf{Honors, Awards \& Memberships}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{2nd Place, Localization Challenge (5th, SLAM Challenge)}
+    { -- Hilti x Trimble SLAM Challenge 2026}
+    {Jun 2026 [\href{https://1drv.ms/b/c/4db9ccab9d8d9130/IQAVaj7i87MISqTeKhItu4OcAVn_ldM8NaGeo2eHFK6QC8Q?e=fDm2Pt}{link}]}
+\resumePOR{Best Presentation Award Finalist}
+    { -- ICRA 2026 Robot Meets Prior Maps Workshop}
+    {Jun 2026 [\href{https://1drv.ms/i/c/4db9ccab9d8d9130/IQB3rUq4c1sJTb4PupPbnu5DAYNO4_C31DYuqXdi1GAZZKc?e=5cLZrE}{link}]}
+\resumePOR{Best Poster Award, 2nd Place}
+    { -- ICRA 2025 Future of Construction Workshop}
+    {2025 [\href{https://construction-robots.github.io/index2025.html}{link}]}
+\resumePOR{Best Research Award, 2nd Place}
+    { -- ICRA 2023 Future of Construction Workshop}
+    {Jun 2023 [\href{https://construction-robots.github.io/index2023.html}{link}]}
+\resumePOR{Danish Government Scholarship}
+    { -- full tuition waiver and stipend, M.Sc. Robot Systems}
+    {2019 -- 2021 [\href{https://1drv.ms/b/c/4db9ccab9d8d9130/ETCRjZ2rzLkggE2rAAAAAAABBNsNs5ey6KEt632-vZz3jw?e=88YskF}{link}]}
+\resumePOR{Professional Memberships}{ -- IEEE Member; IEEE Robotics \& Automation Society; IEEE Young Professionals}{}
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+% ---------------------------------------------------------------- Teaching
+\section{\textbf{Knowledge Transfer, Teaching \& Supervision}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Summer School Lecture}{ -- hierarchical LiDAR SLAM, hands-on Docker tutorial}{Jul 2026 [\href{https://1drv.ms/b/c/4db9ccab9d8d9130/IQBY7fpZ9b9VQ7ZUtCZ3sQIXAe86RLZ_U_7Ici1Zl6MGrRI?e=UOcUQ3}{link}]}
+\resumePOR{M.Sc. Thesis Supervision}{ -- open-source multimodal sensing platform}{Sep 2024 -- Jun 2025 [\href{https://1drv.ms/i/c/4db9ccab9d8d9130/ETsNxw8pvjdFtTJgmw_oU4gBiKo2bBd7cUP9dOsaJytEFg?e=aSnSOA}{link}]}
+\resumePOR{B.Sc. Projects Supervision}{ -- BIM data extraction; \textit{as-built} IFC from robot data}{Sep 2023 -- Jun 2024}
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+% ---------------------------------------------------------------- Publications
+\section{\textbf{Publications} \hfill \textcolor{darkblue}{\scriptsize J=Journal, C=Conference, S=In Submission}}
+\vspace{0.2mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, itemsep=0mm]
+\item[\textbf{[J.1]}] A. Bikandi, M. Cortizas, M. Shaheer et al. (2026). \href{https://arxiv.org/abs/2509.13972}{\textbf{BIM Informed Visual SLAM for Construction Environments}}. \textit{IEEE Robotics \& Automation Letters (RA-L)}, Early Access.
+
+\item[\textbf{[J.2]}] J.A. Millan-Romera, M. Shaheer et al. (2026). \href{https://ieeexplore.ieee.org/document/11593144}{\textbf{Generation of Uncertainty-Aware High-Level Spatial Concepts in Factorized 3D Scene Graphs via Graph Neural Networks}}. \textit{IEEE RA-L}, 11(10), 11243--11250.
+
+\item[\textbf{[J.3]}] S. Ejaz, M. Giberna, M. Shaheer et al. (2026). \href{https://ieeexplore.ieee.org/document/11361085}{\textbf{Situationally-aware Path Planning Exploiting 3D Scene Graphs}}. \textit{IEEE RA-L}, 11(3), 3358--3365.
+
+\item[\textbf{[J.4]}] H. Bavle, J.L. Sanchez-Lopez, M. Shaheer et al. (2025). \href{https://ieeexplore.ieee.org/document/11197654}{\textbf{S-Graphs 2.0 -- A Hierarchical-Semantic Optimization and Loop Closure for SLAM}}. \textit{IEEE RA-L}, 10(12), 12461--12468.
+
+\item[\textbf{[J.5]}] \textbf{M. Shaheer} et al. (2025). \href{https://ieeexplore.ieee.org/document/11045969}{\textbf{Tightly Coupled SLAM With Imprecise Architectural Plans}}. \textit{IEEE RA-L}, 10(8), 8019--8026.
+
+\item[\textbf{[J.6]}] \textbf{M. Shaheer} et al. (2023). \href{https://www.mdpi.com/2218-6581/12/3/65}{\textbf{Robot Localization Using Situational Graphs (S-Graphs) and Building Architectural Plans}}. \textit{Robotics (MDPI)}, 12(3), 65.
+
+\item[\textbf{[J.7]}] H. Bavle, J.L. Sanchez-Lopez, M. Shaheer et al. (2023). \href{https://ieeexplore.ieee.org/document/10168233}{\textbf{S-Graphs+: Real-Time Localization and Mapping Leveraging Hierarchical Representations}}. \textit{IEEE RA-L}, 8(8), 4927--4934.
+
+\item[\textbf{[J.8]}] H. Bavle, J.L. Sanchez-Lopez, M. Shaheer et al. (2022). \href{https://ieeexplore.ieee.org/document/9826367}{\textbf{Situational Graphs for Robot Navigation in Structured Indoor Environments}}. \textit{IEEE RA-L}, 7(4), 9107--9114.
+
+\item[\textbf{[C.1]}] J.A. Millan-Romera, M. Shaheer et al. (2024). \href{https://ieeexplore.ieee.org/document/10801511}{\textbf{Learning High-level Semantic-Relational Concepts for SLAM}}. \textit{IEEE/RSJ IROS 2024}, Abu Dhabi, UAE.
+
+\item[\textbf{[C.2]}] \textbf{M. Shaheer} et al. (2023). \href{https://ieeexplore.ieee.org/document/10341373}{\textbf{Graph-Based Global Robot Localization Informing Situational Graphs with Architectural Graphs}}. \textit{IEEE/RSJ IROS 2023}, Detroit, USA.
+
+\item[\textbf{[S.1]}] M. Giberna, M. Shaheer et al. (2026). \textbf{Robust SLAM with 3D Scene Graph Using Uncertain Dynamic Landmarks}. Submitted to \textit{IEEE RA-L}.
+\end{enumerate}
+}
+\vspace{-2mm}
+
+% ---------------------------------------------------------------- References
+\section{\textbf{References}}
+\vspace{0.8mm}
+\small{
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]
+\item \textbf{Prof. Dr. Holger Voos} (Ph.D. Advisor)\\ University of Luxembourg\\ holger.voos@uni.lu \textbar{} +49 1516 2917429
+\item \textbf{Dr. Jose Luis Sanchez-Lopez} (Mentor)\\ University of Luxembourg\\ joseluis.sanchezlopez@uni.lu \textbar{} +352 671 104 298
+\columnbreak
+\item \textbf{Dr. Javier Civera} (Mentor, Collaborator)\\ University of Zaragoza\\ jcivera@unizar.es \textbar{} +34 876555554
+\item \textbf{Dr. Martin R. Oswald} (Collaborator)\\ University of Amsterdam \& ETH Zurich\\ m.r.oswald@uva.nl \textbar{} +49 176 96374630
+\end{itemize}
+\end{multicols}
+}
+
+\end{document}
